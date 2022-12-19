@@ -1,0 +1,28 @@
+{% extends 'base.html'%}
+
+{% set page_title="Info"%}
+
+{% block body %}
+        <h3> Student Info </h3><br>
+        <table>
+                <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Last name</th>
+                        <th>Email</th>
+                        <th>Country</th>
+                        <th>Gender</th>
+
+                </tr>
+                <tr>
+                        {%for i in student_info %}
+                        <td >{{i.id}}</td>
+                        <td>{{i.first_name}}</td>
+                        <td>{{i.last_name}}</td>
+                        <td>{{i.email}}</td>
+                        <td>{{i.country}}</td>
+                        <td>{{i.gender}}</td>
+                        {% endfor %}
+                </tr>
+        </table>
+{% endblock %}

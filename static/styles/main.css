@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+div.header {
+    background-color: #254b78;
+    padding: 10px 20px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+a.main-logo {
+    text-decoration: none;
+    color: white;
+}
+
+nav.main {
+    padding: 10px;
+    font-size: 20px;
+}
+
+nav.main a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    padding: 10px;
+    background-color: #782532;
+}
+
+nav.main a:hover {
+    font-size: 25px;
+}
+
+table { border-collapse: collapse; }
+th, td { padding: 6px; border: solid 2px black;   text-align: center; }
+th { background-color: lightblue; }
